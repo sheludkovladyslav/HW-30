@@ -1,0 +1,30 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  margin: 0 auto;
+  animation: boxMoving 5s ease-in-out infinite both;
+}
+
+@keyframes boxMoving {
+  0% {
+    transform: translate(0, 0);
+    background-color: brown;
+  }
+  25% {
+    transform: translate(0, 200px);
+    background-color: blue;
+  }
+  50% {
+    transform: translate(200px, 200px);
+    background-color: green;
+  }
+  75% {
+    transform: translate(200px, 0);
+    background-color: yellow;
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: brown;
+  }
+}
